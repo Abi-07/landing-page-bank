@@ -1,0 +1,109 @@
+.main {
+  img.large-blob {
+    width: 48rem;
+    height: 80rem;
+    position: absolute;
+    top: -78%;
+    right: -4.5%;
+  }
+
+  img.small-blob {
+    width: 50%;
+    position: absolute;
+    top: 6%;
+    left: -7rem;
+  }
+
+  .super-simple-text {
+    position: absolute;
+    top: 12%;
+    left: 18%;
+  }
+
+  .collect-video {
+    width: 50%;
+    z-index: 1;
+    position: absolute;
+    left: 10%;
+    top: 34%;
+  }
+
+  .accounting-dots {
+    position: absolute;
+    right: 20%;
+    width: 40%;
+    top: 59%;
+  }
+
+  .calculator-dots {
+    position: absolute;
+    bottom: 32%;
+    right: 5.2%;
+    width: 40%;
+  }
+}
+.calulator-svg {
+  position: absolute;
+  top: 0;
+}
+app-calculator {
+  position: absolute;
+  z-index: 1;
+  right: 10%;
+  top: 10px;
+}
+
+.second-content {
+  background-image: url("../../assets/sol_wave_bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  // background-position-y: 73px;
+
+  .parent-left {
+    margin-top: -4.8rem;
+    width: 60%;
+    padding: 10px 90px 10px 120px;
+
+    .right {
+      margin-top: 5rem;
+    }
+  }
+
+  .parent-right {
+    position: relative;
+
+    .images {
+      position: absolute;
+      top: 5.5rem;
+      padding-left: 2rem;
+
+      .boost {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-top: 2rem;
+        color: #777777;
+      }
+
+      button {
+        margin-top: 2rem;
+        background: transparent;
+        box-shadow: 0px 0px 20px #00000033;
+        border: 2px solid #663399;
+        color: #663399;
+        border-radius: 24px;
+        opacity: 1;
+        padding: 12px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+          background-color: #9f62c9;
+          border-color: #9f62c9;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

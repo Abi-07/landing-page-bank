@@ -1,0 +1,60 @@
+<div class="main">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <span>Eligibility Calculator</span>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="income-expense">
+          <span>Monthly Income</span>
+          <div class="slider">
+            <app-slider [min]="min" [max]="max" [value]="value"></app-slider>
+          </div>
+      </div>
+      <div class="income-expense">
+        <span>Monthly Expense</span>
+        <div class="slider">
+          <app-slider [min]="10000" [max]="300000" [value]="50000" expType="expense"></app-slider>
+        </div>
+      </div>
+
+      <div class="month-selector">
+        <span>Repayment Tenure</span>
+        <select name="months" id="months">
+          <option value="6">6 months</option>
+          <option value="12">12 months</option>
+          <option value="18">18 months</option>
+          <option value="24">24 months</option>
+        </select>
+      </div>
+
+      <div class="switch flex flex-jc-sb">
+        <span>Do you have any existing loans</span>
+        <mat-slide-toggle [(ngModel)]="isChecked"></mat-slide-toggle>
+      </div>
+
+      <div class="emi">
+        <span>EMI of exisiting loan  (optional)</span>
+        <div class="flex">
+          ₹<input type="text">
+        </div>
+      </div>
+
+      
+    </mat-card-content>
+
+  </mat-card>
+  <mat-card class="card-2">
+    <mat-card-content>
+      <div>
+        <span>Loan Amount</span>
+        <h3>₹ 1,00,0000</h3>
+      </div>
+      <div>
+        <span>Your EMI will be</span>
+        <h3>₹ 15,0000</h3>
+      </div>
+      <button>GET MONEY</button>
+    </mat-card-content>
+
+  </mat-card>
+</div>

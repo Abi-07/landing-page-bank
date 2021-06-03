@@ -1,0 +1,8 @@
+<div>
+    <p>₹ {{value | number}}</p>
+    <input type="range" [min]="min" [max]="max" step="5000" [(ngModel)]="value">
+  </div>
+  <div class="flex flex-jc-sb" *ngIf="expType === '' ">
+      <span>₹ {{min | number}}</span>
+      <span>₹ {{max | number}}</span>
+  </div>
