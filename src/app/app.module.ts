@@ -15,7 +15,6 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CalculatorComponent } from './home/calculator/calculator.component';
 import { SliderComponent } from './home/components/slider/slider.component';
-import { TempComponent } from './home/components/temp/temp.component';
 import { CardsComponent } from './home/components/cards/cards.component';
 
 
@@ -30,7 +29,6 @@ const routes: Routes = [
     HeaderComponent,
     CalculatorComponent,
     SliderComponent,
-    TempComponent,
     CardsComponent
   ],
   imports: [

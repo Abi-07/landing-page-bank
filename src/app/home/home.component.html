@@ -17,13 +17,13 @@
 <div class="second-content flex">
     <div class="parent-left flex flex-jc-sb">
         <div class="left">
-            <app-cards></app-cards>
-            <app-cards></app-cards>
-            <app-cards></app-cards>
+            <app-cards [content]="cardsContent[0]"></app-cards>
+            <app-cards [content]="cardsContent[1]"></app-cards>
+            <app-cards [content]="cardsContent[2]"></app-cards>
         </div>
         <div class="right">
-            <app-cards></app-cards>
-            <app-cards></app-cards>
+            <app-cards [content]="cardsContent[3]"></app-cards>
+            <app-cards [content]="cardsContent[4]"></app-cards>
         </div>
     </div>
     <div class="parent-right">
